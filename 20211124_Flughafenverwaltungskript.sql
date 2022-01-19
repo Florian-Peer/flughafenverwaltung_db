@@ -22,12 +22,44 @@ create table flight_execution(
     constraint flight_execution_pk primary key(fe_id)
 );
 
+insert into flight_execution_staff values(1,15);
+insert into flight_execution_staff values(2,13);
+insert into flight_execution_staff values(3,11);
+insert into flight_execution_staff values(4,9);
+insert into flight_execution_staff values(5,7);
+insert into flight_execution_staff values(6,5);
+insert into flight_execution_staff values(7,3);
+insert into flight_execution_staff values(8,1);
+insert into flight_execution_staff values(9,14);
+insert into flight_execution_staff values(10,12);
+insert into flight_execution_staff values(11,10);
+insert into flight_execution_staff values(12,8);
+insert into flight_execution_staff values(13,6);
+insert into flight_execution_staff values(14,4);
+insert into flight_execution_staff values(15,2);
+
 create table flight_execution_customer(
 	fe_id int unsigned not null,
     customer_id varchar(50) not null,
     
     constraint flight_execution_customer_pk primary key(fe_id, customer_id)
 );
+
+insert into flight_execution_customer values(1,9);
+insert into flight_execution_customer values(2,14);
+insert into flight_execution_customer values(3,4);
+insert into flight_execution_customer values(4,11);
+insert into flight_execution_customer values(5,7);
+insert into flight_execution_customer values(6,2);
+insert into flight_execution_customer values(7,15);
+insert into flight_execution_customer values(8,5);
+insert into flight_execution_customer values(9,3);
+insert into flight_execution_customer values(10,13);
+insert into flight_execution_customer values(11,6);
+insert into flight_execution_customer values(12,12);
+insert into flight_execution_customer values(13,1);
+insert into flight_execution_customer values(14,8);
+insert into flight_execution_customer values(15,10);
 
 create table customer(
 	customer_id varchar(50) not null,
@@ -61,6 +93,22 @@ create table customer_address(
     
     constraint customer_address_pk primary key(customer_id, address_id)
 );
+
+insert into customer_address values(1,8);
+insert into customer_address values(2,7);
+insert into customer_address values(3,9);
+insert into customer_address values(4,6);
+insert into customer_address values(5,10);
+insert into customer_address values(6,5);
+insert into customer_address values(7,11);
+insert into customer_address values(8,4);
+insert into customer_address values(9,12);
+insert into customer_address values(10,3);
+insert into customer_address values(11,13);
+insert into customer_address values(12,2);
+insert into customer_address values(13,14);
+insert into customer_address values(14,1);
+insert into customer_address values(15,15);
 
 create table address(
 	address_id int unsigned not null auto_increment,
@@ -147,6 +195,22 @@ create table staff(
     
     constraint staff_pk primary key(staff_id)
 );
+
+insert into staff values(1,"Marcel","Eris","1988-03-30",'m',"Kloputzer");
+insert into staff values(2,"Ringo","Star","1940-07-19",'m',"Reinigungskraft");
+insert into staff values(3,"Hans","Poppinger","1938-02-11",'m',"Elektriker");
+insert into staff values(4,"Herman","Kunix","1980-09-23",'m',"Check-in");
+insert into staff values(5,"Stefan","De Griffel","2000-11-9",'m',"Gepäck");
+insert into staff values(6,"Claudia","Sowieso","1999-12-09",'w',"Schichtleiterin");
+insert into staff values(7,"Axel","Schweiß","1980-05-25",'m',"Hygienebeauftragter");
+insert into staff values(8,"Peter","Poschzel","1975-12-01",'m',"Boarding");
+insert into staff values(9,"Uwe","Derzel","1980-03-14",'m',"Shopleiter");
+insert into staff values(10,"Ringo","Star","1940-07-19",'m',"Reinigungskraft");
+insert into staff values(11,"Simma","Simma","2002-05-05",'m',"Technikbeauftragter");
+insert into staff values(12,"Jens","Niederschneider","1969-04-20",'m',"Flugzeugtechniker");
+insert into staff values(13,"Barbara","Simma","2004-03-08",'w',"Gastronomieleiterin");
+insert into staff values(14,"Ingrid","Suchl","1989-10-17",'w',"Check-in");
+insert into staff values(15,"Johann","Schuster","1995-06-19",'m',"Kundenbetreuung");
 
 create table pilot(
 	pilot_id varchar(50) not null,
