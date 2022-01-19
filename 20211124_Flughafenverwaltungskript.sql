@@ -12,16 +12,6 @@ create table flight_execution_staff(
     constraint flight_execution_staff_pk primary key(fe_id, staff_id)
 );
 
-create table flight_execution(
-	fe_id int unsigned not null auto_increment,
-    departure_date_time datetime not null,
-    arrival_date_time datetime not null,
-    flight_route varchar(20) not null,
-    airline_id int unsigned not null,
-    
-    constraint flight_execution_pk primary key(fe_id)
-);
-
 insert into flight_execution_staff values(1,15);
 insert into flight_execution_staff values(2,13);
 insert into flight_execution_staff values(3,11);
@@ -37,6 +27,16 @@ insert into flight_execution_staff values(12,8);
 insert into flight_execution_staff values(13,6);
 insert into flight_execution_staff values(14,4);
 insert into flight_execution_staff values(15,2);
+
+create table flight_execution(
+	fe_id int unsigned not null auto_increment,
+    departure_date_time datetime not null,
+    arrival_date_time datetime not null,
+    flight_route varchar(20) not null,
+    airline_id int unsigned not null,
+    
+    constraint flight_execution_pk primary key(fe_id)
+);
 
 create table flight_execution_customer(
 	fe_id int unsigned not null,
