@@ -57,6 +57,17 @@ create table address(
     constraint address_pk primary key(address_id)
 );
 
+insert into address value(null, "Österreich", "6020", "Innsbruck", "Fürstenweg", 180);
+insert into address value(null, "Deutschland", "60547", "Frankfurt am Main", "Hugo Eckener Ring", 1);
+insert into address value(null, "Österreich", "1300", "Wien", "Einfahrtsstrasse", 1);
+insert into address value(null, "Türkei", "7230", "Muratpaşa/Antalya", "Yeşilköy", 1);
+insert into address value(null, "Deutschland", "85356", "München", "Nordallee", 25);
+insert into address value(null, "USA", "CA90045", "Los Angeles", "World Way", 1);
+insert into address value(null, "El Salvador", "SAL", "San Salvador", "Autop. Comalapa", 1);
+insert into address value(null, "Vereinigtes Königreich", "E16 2PX", "London", "Hartmann Rd", 1);
+insert into address value(null, "Deutschland", "12529", "Schönefeld", "Melli-Beese-Ring", 1);
+insert into address value(null, "Schweden", "190 45", "Stockholm", "Arlanda", 1);
+
 create table airline(
 	airline_id int unsigned not null auto_increment,
     a_name varchar(50) not null,
