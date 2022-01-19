@@ -39,6 +39,22 @@ create table customer(
     constraint customer_pk primary key(customer_id)
 );
 
+insert into customer values("AT0239", "Peter", "Lustig", '1996-10-11', "M");
+insert into customer values("DE2754", "Lara", "Müller", '2005-1-3', "F");
+insert into customer values("UK9217", "Klemens", "Uncool", '2004-7-23', "M");	
+insert into customer values("AF0239", "Mohammad", "Ali", '1990-12-31', "M");
+insert into customer values("EG9841", "Elena", "Huber", '1984-3-16', "F");
+insert into customer values("AL1686", "Sara", "Mayr", '2000-9-12', "F");
+insert into customer values("BE0239", "Liam", "Mark", '1999-6-17', "M");
+insert into customer values("AT7981", "Maria", "Emmbacher", '1980-2-26', "F");
+insert into customer values("DE0239", "Daniel", "Kopp", '1950-6-30', "M");
+insert into customer values("AT0279", "Eva", "Lewandowski", '2001-5-16', "F");
+insert into customer values("UK9841", "Jere", "Grins", '1977-8-21', "M");
+insert into customer values("UK7787", "Mira", "Schnellrieder", '2008-7-23', "F");
+insert into customer values("AT7162", "Ege", "Dunkel", '2004-9-30', "M");
+insert into customer values("EG8716", "Serena", "Marthe", '1960-5-25', "F");
+insert into customer values("AL7210", "Florian", "Peer", '1945-5-22', "M");
+
 create table customer_address(
 	customer_id varchar(50) not null,
     address_id int unsigned not null,
@@ -67,6 +83,11 @@ insert into address value(null, "El Salvador", "SAL", "San Salvador", "Autop. Co
 insert into address value(null, "Vereinigtes Königreich", "E16 2PX", "London", "Hartmann Rd", 1);
 insert into address value(null, "Deutschland", "12529", "Schönefeld", "Melli-Beese-Ring", 1);
 insert into address value(null, "Schweden", "190 45", "Stockholm", "Arlanda", 1);
+insert into address value(null, "Dänemark", "2770", "Kastrup", "Lufthavnsboulevarden", 6);
+insert into address value(null, "Bosnien und Herzegowina", "71000", "Sarajevo", "Kurta Schorka", 36);
+insert into address value(null, "Spanien", "28042", "Madrid", "Av de la Hispanidad", 1);
+insert into address value(null, "Schweiz", "8058", "Zürich", "Kloten", 1);
+insert into address value(null, "Finnland", "01531", "Helsinki", "Vantaa", 1);
 
 create table airline(
 	airline_id int unsigned not null auto_increment,
